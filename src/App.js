@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from './Component/Layout';
 import AddEmp from './Component/AddEmp';
-import ViewEmp from './Component/ViewEmp';
+
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
       <Layout/>
       <Routes>
-        <Route path='/add-emp' element={<AddEmp/>}/>
-        <Route path='/' element={<ViewEmp/>}/>
+        <Route path='/' element={<AddEmp/>}/>
+       
       </Routes>
       </BrowserRouter>
     </div>

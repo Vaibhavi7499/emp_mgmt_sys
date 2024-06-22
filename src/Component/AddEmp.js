@@ -5,42 +5,51 @@ class AddEmp extends Component {
   constructor() {
     super();
     this.state ={
-     empList:[ {Id: "",
-      EmployeeName: "",
-      Designation: "",
-      Experience: "",
-     }]
+     id: "",
+      employeeName: "",
+      designation: "",
+      experience: "",
+      empList:[]
+     }
     };
-  }
+  
   ChangeId = (id) => {
     this.setState({
-      Id: id.target.value,
+      id: id.target.value,
     });
   };
   ChangeName = (name) => {
     this.setState({
-      EmployeeName: name.target.value,
+      employeeName: name.target.value,
     });
   };
   ChangeDesignation = (designation) => {
     this.setState({
-      Designation: designation.target.value,
+      designation: designation.target.value,
     });
   };
   ChangeExperience = (experience) => {
     this.setState({
-      Experience: experience.target.value,
+      experience: experience.target.value,
     });
   };
   Submit = (event) => {
     event.preventDefault();
-    console.log(this.state)
-    console.log(event)
-//     this.setState({
-// empList:this.state.empList
-//     },()=>{
-//       console.log(this.state)
-//     })
+    let a={
+      id:this.state.id,
+      employeeName:this.state?.employeeName,
+      designation:this.state?.designation,
+      experience:this.state?.experience
+    }
+    this.setState({
+      empList:[...this.state?.empList,a],
+      id:"",
+      employeeName:"",
+      designation:"",
+      experience:""
+    })
+    document.getElementById("exampleModal").classList.remove("show", "d-block", "modal-open");  
+        document.getElementsByClassName("modal-backdrop")[0].classList.remove("modal-backdrop");
   };
   render() {
     return (
@@ -81,7 +90,7 @@ class AddEmp extends Component {
                     <input
                       type="text"
                       className="form-control"
-                      value={this.state.Id}
+                      value={this.state.id}
                       onChange={(e) => {
                         this.ChangeId(e);
                       }}
@@ -92,7 +101,7 @@ class AddEmp extends Component {
                     <input
                       type="text"
                       className="form-control"
-                      value={this.state.EmployeeName}
+                      value={this.state.employeeName}
                       onChange={(e) => {
                         this.ChangeName(e);
                       }}
@@ -103,7 +112,7 @@ class AddEmp extends Component {
                     <input
                       type="text"
                       className="form-control"
-                      value={this.state.Designation}
+                      value={this.state.designation}
                       onChange={(e) => {
                         this.ChangeDesignation(e);
                       }}
@@ -114,7 +123,7 @@ class AddEmp extends Component {
                     <input
                       type="text"
                       className="form-control"
-                      value={this.state.Experience}
+                      value={this.state.experience}
                       onChange={(e) => {
                         this.ChangeExperience(e);
                       }}
@@ -129,13 +138,14 @@ class AddEmp extends Component {
                     >
                       Close
                     </button>
-                    <button className="btn btn-primary">Add Employee</button>
+                    <button className="btn btn-primary" >Add Employee</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
+        <ViewEmp empList={this.state.empList}/>
       </div>
     );
   }

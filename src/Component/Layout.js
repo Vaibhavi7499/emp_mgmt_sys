@@ -20,10 +20,8 @@ function Layout() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link className="nav-item nav-link active" to="/">
-              View Employee Details 
-            </Link>
-            <Link className="nav-item nav-link" to="/add-emp">
+            
+            <Link className="nav-item nav-link" to="/">
               Add Employee
             </Link>
           </div>

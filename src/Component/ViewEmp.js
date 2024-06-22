@@ -3,12 +3,20 @@ import { Component } from "react";
 class ViewEmp extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-       
-    };
+  }
+  Delete(){
+
+      this.props.empList.map((ele)=>(
+        ele.id="",
+        ele.employeeName="",
+      ele.designation="",
+        ele.experience=""
+      ))
+  
+   
   }
   render() {
-    console.log(this.props.id)
+    console.log(this.props)
     return (
       <div>
         <h1> Employee List</h1>
@@ -23,16 +31,23 @@ class ViewEmp extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-                <td>{this.props.id}</td>
-                <td>Vaibhavi</td>
-                <td>Software Engineer</td>
-                <td>2 Years</td>
+            {
+              this.props.empList.length ? 
+              this.props.empList.map((ele)=>(
+                <tr>
+                <td>{ele.id}</td>
+                <td>{ele.employeeName}</td>
+                <td>{ele.designation}</td>
+                <td>{ele.experience}</td>
                 <td>
                     <button className="btn btn-success">edit</button>&nbsp;&nbsp;
-                    <button className="btn btn-danger">delete</button>
+                    <button className="btn btn-danger" onClick={this.Delete}>delete</button>
                     </td>
             </tr>
+              )) :
+              <h1>No record found</h1>
+            }
+           
           </tbody>
           
         </table>
