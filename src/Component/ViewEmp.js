@@ -6,12 +6,7 @@ class ViewEmp extends Component {
   }
   Delete(){
 
-      this.props.empList.map((ele)=>(
-        ele.id="",
-        ele.employeeName="",
-      ele.designation="",
-        ele.experience=""
-      ))
+      
   
    
   }
