@@ -24,6 +24,9 @@ function Layout() {
             <Link className="nav-item nav-link" to="/">
               Add Employee
             </Link>
+            <Link className="nav-item nav-link" to="/word-letter">
+              word & letter counter
+            </Link>
           </div>
         </div>
       </nav>
