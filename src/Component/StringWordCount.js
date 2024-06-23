@@ -8,8 +8,8 @@ export class StringWordCount extends Component {
       stringName: "",
       countWord: "",
       countLetter: "",
-      lowerCaseString : '',
-      upperCaseString : '',
+      lowerCaseString: "",
+      upperCaseString: "",
     };
   }
   countString = (e) => {
@@ -19,25 +19,25 @@ export class StringWordCount extends Component {
   };
 
   countWordLetter = () => {
-    let countW = this.state.stringName.split(' ').length;
-    let countL = this.state.stringName.replaceAll(' ','').split('').length 
+    let countW = this.state.stringName.split(" ").length;
+    let countL = this.state.stringName.replaceAll(" ", "").split("").length;
     this.setState({
-        countWord : countW,
-        countLetter : countL
-    })
-  }
+      countWord: countW,
+      countLetter: countL,
+    });
+  };
 
   LowerCaseString = () => {
     this.setState({
-        lowerCaseString : this.state.stringName.toLowerCase()
-    })
-  }
+      lowerCaseString: this.state.stringName.toLowerCase(),
+    });
+  };
 
   UpperCaseString = () => {
     this.setState({
-        upperCaseString : this.state.stringName.toUpperCase()
-    })
-  }
+      upperCaseString: this.state.stringName.toUpperCase(),
+    });
+  };
 
   render() {
     return (
@@ -54,17 +54,32 @@ export class StringWordCount extends Component {
               maxLength="200"
             />
             <div>
-              <button className="btn btn-primary" onClick={this.countWordLetter}>Find</button>
+              <button
+                className="btn btn-primary"
+                onClick={this.countWordLetter}
+              >
+                Find
+              </button>
               &nbsp;&nbsp;
-              <button className="btn btn-secondary" onClick={this.LowerCaseString}>LowerCaseString</button>
+              <button
+                className="btn btn-secondary"
+                onClick={this.LowerCaseString}
+              >
+                LowerCaseString
+              </button>
               &nbsp;&nbsp;
-              <button className="btn btn-success" onClick={this.UpperCaseString}>UpperCaseString</button>
+              <button
+                className="btn btn-success"
+                onClick={this.UpperCaseString}
+              >
+                UpperCaseString
+              </button>
             </div>
             <div>
-                <p>Word Count: {this.state.countWord}</p>
-                <p>Letter Count: {this.state.countLetter}</p>
-                <p>Lower case string: {this.state.lowerCaseString}</p>
-                <p>Upper case string: {this.state.upperCaseString}</p>
+              <p>Word Count: {this.state.countWord}</p>
+              <p>Letter Count: {this.state.countLetter}</p>
+              <p>Lower case string: {this.state.lowerCaseString}</p>
+              <p>Upper case string: {this.state.upperCaseString}</p>
             </div>
           </div>
         </div>
