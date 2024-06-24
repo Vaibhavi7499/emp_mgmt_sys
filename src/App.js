@@ -8,18 +8,23 @@ import About from './About';
 import Main from './Main';
 import Parent from './Parent';
 import Example from './Example';
+import StringWordCount from './Component/StringWordCount';
+import ToDo from './ToDo';
+
 
 function App() {
   return (
+    
     <div>
-     
-      {/* <BrowserRouter>
+      <BrowserRouter>
       <Layout/>
       <Routes>
         <Route path='/' element={<AddEmp/>}/>
-       
+        <Route path='/word-letter' element={<StringWordCount/>}/>
+        <Route path='/todo' element={<ToDo/>}/>
       </Routes>
-      </BrowserRouter> */}
+     
+      </BrowserRouter>  
       {/* <BrowserRouter>
       <Main/>
       <Routes>
@@ -28,7 +33,8 @@ function App() {
       </Routes>
       </BrowserRouter> */}
       {/* <Parent/> */}
-      <Example/>
+      {/* <Example/> */}
+      {/* <ToDo/> */}
     </div>
   );
 }
