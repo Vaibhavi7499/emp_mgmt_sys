@@ -24,7 +24,7 @@ this.setState({
 ShowInfo=()=>{
     this.setState({
        count:this.state.a.length,
- count1:this.state.b.length
+ count1:this.state.name.replaceAll(" ",'').length
         })
 
 }
@@ -44,8 +44,8 @@ UpperCase=()=>{
       <div>
         <textarea className='textArea' value={this.state.name} onChange={(ele)=>{this.CountLetter(ele)}}></textarea>
         <button onClick={this.ShowInfo}>ShowInfo</button>
-        <h1>Total letter :{this.state.count}</h1>
-        <h1>Total Word :{this.state.count1}</h1>
+        <h1>Total letter :{this.state.count1}</h1>
+        <h1>Total Word :{this.state.count}</h1>
 <button onClick={this.UpperCase}>UpperCase</button>
 <h1>LowerCase :{ this.state.c}</h1>
 <button onClick={this.LowerCase}>LowerCase</button>

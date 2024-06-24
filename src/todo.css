@@ -1,0 +1,53 @@
+.btn1{
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.btn2{
+    background-color:aliceblue;
+    color:black;
+    width: auto;
+    height:35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.maincontainer{
+    height: 400px;
+    width: 600px;
+    background-color: bisque;
+    margin: auto;
+    border: 2px solid red;
+    border-radius: 100px;
+    margin-top: 90px;
+}
+h1{
+    margin-left: 190px;
+}
+label{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-right: 20px;
+}
+input{
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+}
+.add{
+    margin-left: 220px;
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    padding: 5px;
+}
+li{
+    margin-left: 30px;
+    font-size: 20px;
+}

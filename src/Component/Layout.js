@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
 function Layout() {
   return (
     <div>
+        
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link className="navbar-brand" to="/">
           Employee Management System
@@ -27,10 +27,21 @@ function Layout() {
             <Link className="nav-item nav-link" to="/word-letter">
               word & letter counter
             </Link>
+            <Link className="nav-item nav-link" to="/todo">
+            ToDo List 
+          
+            </Link>
+           
           </div>
+          
         </div>
+        
       </nav>
+      
     </div>
+    
+    
+
   );
 }
 export default Layout;
