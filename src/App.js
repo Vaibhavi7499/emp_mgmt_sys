@@ -10,6 +10,7 @@ import Parent from './Parent';
 import Example from './Example';
 import StringWordCount from './Component/StringWordCount';
 import ToDo from './ToDo';
+import ExpenseTracker from './Component/ExpenseTracker';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<AddEmp/>}/>
         <Route path='/word-letter' element={<StringWordCount/>}/>
         <Route path='/todo' element={<ToDo/>}/>
+        <Route path='/expense-tracker' element={<ExpenseTracker/>}/>
       </Routes>
      
       </BrowserRouter>  

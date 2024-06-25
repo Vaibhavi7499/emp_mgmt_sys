@@ -1,0 +1,9 @@
+
+
+.container input, .container button {
+    margin-right: 10px; /* Adjust spacing between elements */
+}
+
+.container input:last-of-type, .container button {
+    margin-right: 0; /* Remove margin for the last input and button */
+}

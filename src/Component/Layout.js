@@ -29,7 +29,9 @@ function Layout() {
             </Link>
             <Link className="nav-item nav-link" to="/todo">
             ToDo List 
-          
+            </Link>
+            <Link className="nav-item nav-link" to="/expense-tracker">
+            Expense Tracker App
             </Link>
            
           </div>
