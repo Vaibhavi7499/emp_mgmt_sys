@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./todo.css";
+import styles from "./todo.module.css";
 class ToDo extends Component {
   constructor(props) {
     super(props);
@@ -57,7 +57,7 @@ class ToDo extends Component {
   }
   render() {
     return (
-      <div className="maincontainer">
+      <div className={styles.maincontainer}>
         <h1>TODO List</h1>
         <label>Enter String :</label>
         <input
@@ -67,7 +67,7 @@ class ToDo extends Component {
             this.AccessName(e);
           }}
         ></input>
-        <button className="add" onClick={this.AddItem}>
+        <button className={styles.add} onClick={this.AddItem}>
           {this.state.isupdate ? "Update Item" : "Add Item"}
         </button>
         <ol>
@@ -78,7 +78,7 @@ class ToDo extends Component {
               <li>
                 {e}
                 <button
-                  className="btn1"
+                  className={styles.btn1}
                   onClick={() => {
                     this.DeleteBtn(e);
                   }}
@@ -86,7 +86,7 @@ class ToDo extends Component {
                   *
                 </button>
                 <button
-                  className="btn2"
+                  className={styles.btn2}
                   onClick={() => {
                     this.UpdateItem(e);
                   }}

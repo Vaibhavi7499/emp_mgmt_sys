@@ -8,7 +8,7 @@ export class ExpenseTracker extends Component {
       expenseName: "",
       Amount: "",
       addExpense: [],
-      total : ''
+      total: "",
     };
   }
 
@@ -25,19 +25,23 @@ export class ExpenseTracker extends Component {
   }
 
   addExpenseFun = () => {
-    let sum = this.state.total
-    this.setState({
-      addExpense: [
-        ...this.state.addExpense,
-        { 
+    if(this.state.expenseName == '' || this.state.Amount == '') {
+      return alert('please enter expense and amount')
+    } else {
+      let sum = this.state.total;
+      this.setState({
+        addExpense: [
+          ...this.state.addExpense,
+          {
             expenseName: this.state.expenseName,
-             amount: this.state.Amount,
-        },
-      ],
-      expenseName: "",
-      Amount: "",
-      total : Number(sum) + Number(this.state.Amount)
-    });
+            amount: this.state.Amount,
+          },
+        ],
+        expenseName: "",
+        Amount: "",
+        total: Number(sum) + Number(this.state.Amount),
+      });
+    }
   };
 
   deleteExpense(e) {
@@ -48,7 +52,7 @@ export class ExpenseTracker extends Component {
           return ele;
         }
       }),
-      total : this.state.total 
+      total: this.state.total,
     });
   }
   render() {
