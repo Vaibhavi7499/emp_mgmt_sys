@@ -10,18 +10,22 @@ import Parent from './Parent';
 import Example from './Example';
 import StringWordCount from './Component/StringWordCount';
 import ToDo from './ToDo';
+import Expense from './Expense';
+import Whether from './Whether';
+import Student from './Student';
 
 
 function App() {
   return (
     
     <div>
-      <BrowserRouter>
+       <BrowserRouter>
       <Layout/>
       <Routes>
         <Route path='/' element={<AddEmp/>}/>
         <Route path='/word-letter' element={<StringWordCount/>}/>
         <Route path='/todo' element={<ToDo/>}/>
+        <Route path='/percentage' element={<Student/>}/>
       </Routes>
      
       </BrowserRouter>  
@@ -35,6 +39,9 @@ function App() {
       {/* <Parent/> */}
       {/* <Example/> */}
       {/* <ToDo/> */}
+      {/* <Expense/> */}
+      {/* <Whether/> */}
+      {/* <Student/> */}
     </div>
   );
 }

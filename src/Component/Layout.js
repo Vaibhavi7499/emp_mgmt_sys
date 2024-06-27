@@ -31,6 +31,7 @@ function Layout() {
             ToDo List 
           
             </Link>
+            <Link to="/percentage">Percentage calculate</Link>
            
           </div>
           

@@ -8,8 +8,8 @@ class Parent extends Component {
         name:"Vaibhavi"
     };
   }
-  Demo(id){
-console.log(id)
+  Demo=(fname)=>{
+alert(`My name is ${this.state.name} ${fname}`)
   }
   render() {
     return (

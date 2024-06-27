@@ -1,0 +1,27 @@
+.heading{
+    margin-left: 100px;
+}
+.btn1{
+    border-radius: 20px;
+    height:auto;
+    width: auto;
+}
+.expense{
+background-color:aliceblue;
+border-radius: 20px;
+margin-left: 20px;
+height: 39px;
+}
+.inpt{
+    margin-left: 20px;
+}
+table{
+    margin-top: 20px;
+}
+h1{
+    margin-left: 500px;
+}
+.total{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
