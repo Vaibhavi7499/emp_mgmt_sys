@@ -13,6 +13,7 @@ import ToDo from './ToDo';
 import Expense from './Expense';
 import Whether from './Whether';
 import Student from './Student';
+import ExpenseTracker from './Component/ExpenseTracker';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/word-letter' element={<StringWordCount/>}/>
         <Route path='/todo' element={<ToDo/>}/>
         <Route path='/percentage' element={<Student/>}/>
+        <Route path='/expense-tracker' element={<ExpenseTracker/>}/>
       </Routes>
      
       </BrowserRouter>  
