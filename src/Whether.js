@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./whether.css"
+import styles from "./whether.module.css"
  class Whether extends Component {
     constructor(props) {
       super(props)
@@ -28,9 +28,9 @@ this.setState({
     }
   render() {
       return (
-      <div className='maincontainer'>
+      <div className={styles.maincontainer}>
         <input type='text' value={this.state.city} placeholder='enter city' onChange={(e)=>{this.accessCity(e)}}></input>
-        <button onClick={this.ShowWhether} className='whether'>show whether</button>
+        <button onClick={this.ShowWhether} className={styles.whether}>show whether</button>
      {
         this.state.cityName.map((e)=>(
           <>

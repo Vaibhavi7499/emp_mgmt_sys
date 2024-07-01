@@ -33,7 +33,7 @@ function Layout() {
             <Link className="nav-item nav-link" to="/expense-tracker">
             Expense Tracker App
             </Link>
-            <Link to="/percentage">Percentage calculate</Link>
+            <Link className="nav-item nav-link"  to="/percentage">Percentage calculate</Link>
            
           </div>
           

@@ -14,13 +14,15 @@ import Expense from './Expense';
 import Whether from './Whether';
 import Student from './Student';
 import ExpenseTracker from './Component/ExpenseTracker';
+import Age from './Age';
+import LifeCycleA from './LifeCycleA';
 
 
 function App() {
   return (
     
     <div>
-       <BrowserRouter>
+       {/* <BrowserRouter>
       <Layout/>
       <Routes>
         <Route path='/' element={<AddEmp/>}/>
@@ -30,7 +32,7 @@ function App() {
         <Route path='/expense-tracker' element={<ExpenseTracker/>}/>
       </Routes>
      
-      </BrowserRouter>  
+      </BrowserRouter>   */}
       {/* <BrowserRouter>
       <Main/>
       <Routes>
@@ -44,6 +46,8 @@ function App() {
       {/* <Expense/> */}
       {/* <Whether/> */}
       {/* <Student/> */}
+      {/* <Age/> */}
+      <LifeCycleA/>
     </div>
   );
 }

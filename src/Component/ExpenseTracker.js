@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ExpenseTracker.css";
+import styles from "./ExpenseTracker.module.css"
 export class ExpenseTracker extends Component {
   constructor(props) {
     super(props);

@@ -77,13 +77,13 @@ class Student extends Component {
     return (
       <div>
         <h1> Student grade calculator</h1>
-        <div className="subcontainer">
+        <div className={styles.subcontainer}>
           <label>Enter Marks</label>
           <br></br>
           <label>Physics:</label>
           <input
             type="text"
-            className="inpt1"
+            className={styles.inpt1}
             value={this.state.physics}
             onChange={(e) => {
               this.AccessPhysicsMarks(e);
@@ -93,7 +93,7 @@ class Student extends Component {
           <label>Chemistry:</label>
           <input
             type="text"
-            className="inpt2"
+            className={styles.inpt2}
             value={this.state.chemistry}
             onChange={(e) => {
               this.AccessChemistryMarks(e);
@@ -103,7 +103,7 @@ class Student extends Component {
           <label>Biology:</label>
           <input
             type="text"
-            className="inpt3"
+            className={styles.inpt3}
             value={this.state.biology}
             onChange={(e) => {
               this.AccessBiologyMarks(e);
@@ -113,7 +113,7 @@ class Student extends Component {
           <label>Math:</label>
           <input
             type="text"
-            className="inpt4"
+            className={styles.inpt4}
             value={this.state.math}
             onChange={(e) => {
               this.AccessMathMarks(e);
@@ -123,14 +123,14 @@ class Student extends Component {
           <label>English:</label>
           <input
             type="text"
-            className="inpt5"
+            className={styles.inpt5}
             value={this.state.english}
             onChange={(e) => {
               this.AccessEnglishMarks(e);
             }}
           ></input>
           <br></br>
-          <button className="btn1" onClick={this.Percentage}>
+          <button className={styles.btn1} onClick={this.Percentage}>
             show Percentage
           </button>
 {

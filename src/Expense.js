@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./expense.css"
+import styles from "./expense.module.css"
  class Expense extends Component {
     constructor(props) {
       super(props)
@@ -57,8 +57,8 @@ this.setState({
       <div>
         <h1>Expense Tracker</h1>
         <input type='text' placeholder='Expense Name' value={this.state.expenseName} onChange={(e)=>{this.AccessExpense(e)}}></input>
-        <input type='number' className='inpt' placeholder='Amount'  value={this.state.expenseAmount} onChange={(e)=>{this.AccessAmount(e)}}></input>
-        <button onClick={this.AddExpense} className='expense'>Add Expense</button>
+        <input type='number' className={styles.inpt} placeholder='Amount'  value={this.state.expenseAmount} onChange={(e)=>{this.AccessAmount(e)}}></input>
+        <button onClick={this.AddExpense} className={styles.expense}>Add Expense</button>
         <table class="table table-light table-bordered">
           <thead>
             <tr>
@@ -75,7 +75,7 @@ this.setState({
                 <tr>
                   <td>{e.name}</td>
                   <td>{e.amount}</td>
-                  <td><button className='btn1' onClick={()=>{this.Delete(e)}}>delete</button></td>            
+                  <td><button className={styles.btn1} onClick={()=>{this.Delete(e)}}>delete</button></td>            
                 </tr>
               )) ):
               (
