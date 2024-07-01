@@ -16,8 +16,12 @@ import Student from './Student';
 import ExpenseTracker from './Component/ExpenseTracker';
 import Age from './Age';
 import LifeCycleA from './LifeCycleA';
-
-
+import ParentA from './propsLearn/ParentA';
+import Contact from './RouterLearn/Contact';
+import HomeR from './RouterLearn/HomeR';
+import AboutR from './RouterLearn/AboutR';
+import LayoutR from './RouterLearn/LayoutR';
+import ChildR from './RouterLearn/ChildR';
 function App() {
   return (
     
@@ -47,7 +51,18 @@ function App() {
       {/* <Whether/> */}
       {/* <Student/> */}
       {/* <Age/> */}
-      <LifeCycleA/>
+      {/* <LifeCycleA/> */}
+      {/* <ParentA /> */}
+      <BrowserRouter>
+      <LayoutR/>
+      <Routes>
+        <Route path='home' element={<HomeR/>}>
+        <Route path='child' element={<ChildR/>} />
+        </Route>
+        <Route path='about' element={<AboutR/>} />
+        <Route path='contact' element={<Contact/>} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
