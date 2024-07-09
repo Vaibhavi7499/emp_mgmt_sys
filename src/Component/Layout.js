@@ -36,6 +36,7 @@ function Layout() {
             <Link className="nav-item nav-link" to="/age-cal">
             Age Calcultor
             </Link>
+            <Link className="nav-item nav-link"  to="/percentage">Percentage calculate</Link>
            
           </div>
           

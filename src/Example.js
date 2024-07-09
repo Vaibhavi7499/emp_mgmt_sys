@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./example.css"
+import styles from "./example.module.css"
 class Example extends Component {
     constructor(){
         super()
@@ -42,7 +42,7 @@ UpperCase=()=>{
 
     return (
       <div>
-        <textarea className='textArea' value={this.state.name} onChange={(ele)=>{this.CountLetter(ele)}}></textarea>
+        <textarea className={styles.textArea} value={this.state.name} onChange={(ele)=>{this.CountLetter(ele)}}></textarea>
         <button onClick={this.ShowInfo}>ShowInfo</button>
         <h1>Total letter :{this.state.count1}</h1>
         <h1>Total Word :{this.state.count}</h1>

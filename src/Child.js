@@ -7,15 +7,15 @@ class Child extends Component {
         name:"Bodke"
     };
   }
-  AccessName=()=>{
-this.props.Demo(1)
-  }
+//   AccessName=()=>{
+// this.props.Demo()
+//   }
   render() {
     return (
       <div>
         <h1>Child component</h1>
         <h1>Name:{this.props.name}</h1>
-        <button onClick={this.AccessName}>Click</button>
+        <button onClick={()=>this.props.Demo("Bharat")}>Click</button>
         
       </div>
     );
