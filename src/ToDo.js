@@ -3,6 +3,7 @@ import styles from "./todo.module.css";
 class ToDo extends Component {
   constructor(props) {
     super(props);
+    console.log(styles);
 
     this.state = {
       name: "",

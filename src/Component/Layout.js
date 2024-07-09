@@ -33,6 +33,9 @@ function Layout() {
             <Link className="nav-item nav-link" to="/expense-tracker">
             Expense Tracker App
             </Link>
+            <Link className="nav-item nav-link" to="/age-cal">
+            Age Calcultor
+            </Link>
            
           </div>
           

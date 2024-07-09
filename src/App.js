@@ -11,6 +11,7 @@ import Example from './Example';
 import StringWordCount from './Component/StringWordCount';
 import ToDo from './ToDo';
 import ExpenseTracker from './Component/ExpenseTracker';
+import Age from './Component/Age';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/word-letter' element={<StringWordCount/>}/>
         <Route path='/todo' element={<ToDo/>}/>
         <Route path='/expense-tracker' element={<ExpenseTracker/>}/>
+        <Route path='//age-cal' element={<Age/>}/>
       </Routes>
      
       </BrowserRouter>  
