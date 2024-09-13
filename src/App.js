@@ -17,7 +17,7 @@ import ExpenseTracker from './Component/ExpenseTracker';
 import Age from './Component/Age';
 
 
-import Age from './Age';
+//import Age from './Age';
 import LifeCycleA from './LifeCycleA';
 import ParentA from './propsLearn/ParentA';
 import Contact from './RouterLearn/Contact';
@@ -37,7 +37,7 @@ function App() {
         <Route path='/todo' element={<ToDo/>}/>
         <Route path='/percentage' element={<Student/>}/>
         <Route path='/expense-tracker' element={<ExpenseTracker/>}/>
-        <Route path='//age-cal' element={<Age/>}/>
+        <Route path='/age-cal' element={<Age/>}/>
       </Routes>
      
       </BrowserRouter>   */}
@@ -57,7 +57,7 @@ function App() {
       {/* <Age/> */}
       {/* <LifeCycleA/> */}
       {/* <ParentA /> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <LayoutR/>
       <Routes>
         <Route path='home' element={<HomeR/>}>
@@ -66,7 +66,7 @@ function App() {
         <Route path='about' element={<AboutR/>} />
         <Route path='contact' element={<Contact/>} />
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }
